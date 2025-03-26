@@ -1,32 +1,42 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
-<style lang="less">
+<script>
+import Header from '@/components/layout/Header.vue'
+import Footer from '@/components/layout/Footer.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-nav {
-  padding: 30px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  margin: 0;
 }
 </style>
