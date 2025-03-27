@@ -115,7 +115,7 @@ export default {
 
 .payment-img {
   width: 120px;
-  height: 40px;
+  height: 60px;
 }
 
 .footer-copy {

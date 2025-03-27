@@ -143,7 +143,7 @@
 
                 <div class="payment-method">
                   <input type="radio" id="payment-bank" value="bank" v-model="paymentMethod" checked>
-                  <label for="payment-bank">Direct Bank Transfer</label>
+                  <label for="payment-bank"><img src="@/assets/image/easypaisa.png" alt="Payment methods" class="payment-img"></label>
                   <div class="payment-method-description" v-if="paymentMethod === 'bank'">
                     Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
                   </div>
@@ -151,9 +151,9 @@
 
                 <div class="payment-method">
                   <input type="radio" id="payment-cash" value="cash" v-model="paymentMethod">
-                  <label for="payment-cash">Cash on Delivery</label>
+                  <label for="payment-cash"><img src="@/assets/image/Frame 3.png" alt="Payment methods" class="payment-img"></label>
                   <div class="payment-method-description" v-if="paymentMethod === 'cash'">
-                    Pay with cash upon delivery.
+                    Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
                   </div>
                 </div>
               </div>
@@ -233,6 +233,11 @@ export default {
   color: #666;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.payment-img {
+  width: 120px;
+  height: 60px;
 }
 
 .breadcrumb a {

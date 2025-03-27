@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div class="logo">
           <router-link to="/">
-            <img src="https://ext.same-assets.com/2269417689/940586143.jpeg" alt="Elite Mac Store" />
+            <img src="@/assets/image/logo.png" alt="Elite Mac Store" />
           </router-link>
         </div>
 
