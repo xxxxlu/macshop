@@ -32,7 +32,8 @@
           <div class="footer-widget">
             <h4>Payment Methods</h4>
             <div class="payment-methods">
-              <img src="https://ext.same-assets.com/2269417689/1178547341.png" alt="Payment methods" class="payment-img">
+              <img src="@/assets/image/easypaisa.png" alt="Payment methods" class="payment-img">
+              <img src="@/assets/image/Frame 3.png" alt="Payment methods" class="payment-img">
             </div>
           </div>
         </div>
@@ -41,7 +42,7 @@
 
     <div class="footer-copy">
       <div class="container">
-        <p class="copyright">Copyright © {{ new Date().getFullYear() }} | Powered by INSPIREINNO SMC PRIVATE LIMITED</p>
+        <p class="copyright">Copyright © {{ new Date().getFullYear() }} | Powered by Data Network Solutions </p>
       </div>
     </div>
   </footer>
@@ -105,9 +106,16 @@ export default {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
 .payment-img {
-  max-width: 100%;
-  height: auto;
+  width: 120px;
+  height: 40px;
 }
 
 .footer-copy {

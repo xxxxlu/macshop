@@ -53,7 +53,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="price-col">₨{{ formatPrice(item.price) }}</td>
+                <td class="price-col">Rs.{{ formatPrice(item.price) }}</td>
                 <td class="quantity-col">
                   <div class="quantity-control">
                     <button class="quantity-btn" @click="updateQuantity(item.id, item.quantity - 1)" :disabled="item.quantity <= 1">-</button>
@@ -61,7 +61,7 @@
                     <button class="quantity-btn" @click="updateQuantity(item.id, item.quantity + 1)">+</button>
                   </div>
                 </td>
-                <td class="subtotal-col">₨{{ formatPrice(item.price * item.quantity) }}</td>
+                <td class="subtotal-col">Rs.{{ formatPrice(item.price * item.quantity) }}</td>
                 <td class="remove-col">
                   <button class="remove-btn" @click="removeFromCart(item.id)">
                     <i class="fas fa-times"></i>
@@ -77,7 +77,7 @@
           <h2 class="summary-title">Cart totals</h2>
           <div class="summary-row">
             <span class="summary-label">Subtotal</span>
-            <span class="summary-value">₨{{ formatPrice(cartTotal) }}</span>
+            <span class="summary-value">Rs.{{ formatPrice(cartTotal) }}</span>
           </div>
           <div class="summary-row">
             <span class="summary-label">Shipping</span>
@@ -85,7 +85,7 @@
           </div>
           <div class="summary-row total">
             <span class="summary-label">Total</span>
-            <span class="summary-value">₨{{ formatPrice(cartTotal) }}</span>
+            <span class="summary-value">Rs.{{ formatPrice(cartTotal) }}</span>
           </div>
           <router-link to="/checkout" class="proceed-btn">
             Proceed to checkout

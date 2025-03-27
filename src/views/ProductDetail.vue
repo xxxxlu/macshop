@@ -22,7 +22,7 @@
         <!-- 产品信息 -->
         <div class="product-info">
           <h1 class="product-title">{{ product.name }}</h1>
-          <p class="product-price">₨{{ formatPrice(product.price) }}</p>
+          <p class="product-price">Rs.{{ formatPrice(product.price) }}</p>
 
           <div class="product-description">
             <p>{{ product.description }}</p>
@@ -105,7 +105,7 @@
               <img :src="relatedProduct.image" :alt="relatedProduct.name" class="product-img">
               <div class="product-card-info">
                 <h3>{{ relatedProduct.name }}</h3>
-                <p class="product-card-price">₨{{ formatPrice(relatedProduct.price) }}</p>
+                <p class="product-card-price">Rs.{{ formatPrice(relatedProduct.price) }}</p>
               </div>
             </router-link>
             <div class="product-card-actions">

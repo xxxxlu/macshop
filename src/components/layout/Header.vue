@@ -33,7 +33,7 @@
           <div class="cart-icon" @click="$router.push('/cart')">
             <i class="fas fa-shopping-cart"></i>
             <span class="cart-count">{{ cartItemCount }}</span>
-            <span class="cart-total">₨{{ formatPrice(cartTotal) }}</span>
+            <span class="cart-total">Rs.{{ formatPrice(cartTotal) }}</span>
           </div>
           <div class="search-icon" @click="toggleSearch">
             <i class="fas fa-search"></i>
@@ -86,7 +86,7 @@
         <div class="cart-icon" @click="$router.push('/cart'); toggleMobileMenu()">
           <i class="fas fa-shopping-cart"></i>
           <span class="cart-count">{{ cartItemCount }}</span>
-          <span class="cart-total">₨{{ formatPrice(cartTotal) }}</span>
+          <span class="cart-total">Rs.{{ formatPrice(cartTotal) }}</span>
         </div>
       </div>
     </div>

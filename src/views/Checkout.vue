@@ -117,13 +117,13 @@
                 <div class="order-summary-list">
                   <div v-for="item in cart" :key="item.id" class="order-item">
                     <div class="order-item-name">{{ item.name }} <span class="order-item-quantity">× {{ item.quantity }}</span></div>
-                    <div class="order-item-price">₨{{ formatPrice(item.price * item.quantity) }}</div>
+                    <div class="order-item-price">Rs.{{ formatPrice(item.price * item.quantity) }}</div>
                   </div>
                 </div>
 
                 <div class="order-summary-subtotal">
                   <span>Subtotal</span>
-                  <span>₨{{ formatPrice(cartTotal) }}</span>
+                  <span>Rs.{{ formatPrice(cartTotal) }}</span>
                 </div>
 
                 <div class="order-summary-shipping">
@@ -133,7 +133,7 @@
 
                 <div class="order-summary-total">
                   <span>Total</span>
-                  <span>₨{{ formatPrice(cartTotal) }}</span>
+                  <span>Rs.{{ formatPrice(cartTotal) }}</span>
                 </div>
               </div>
 

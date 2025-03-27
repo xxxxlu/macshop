@@ -43,7 +43,7 @@
                 <div v-if="index < 2">
                   <img :src="product.image" :alt="product.name" class="promo-product-img">
                 <h4>{{ product.name }}</h4>
-                <p class="promo-price">₨{{ formatPrice(product.price) }}</p>
+                <p class="promo-price">Rs.{{ formatPrice(product.price) }}</p>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@
               <img :src="product.image" :alt="product.name" class="product-img">
               <div class="product-info">
                 <h3>{{ product.name }}</h3>
-                <p class="product-price">₨{{ formatPrice(product.price) }}</p>
+                <p class="product-price">Rs.{{ formatPrice(product.price) }}</p>
               </div>
             </router-link>
             <div class="product-actions">
