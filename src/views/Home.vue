@@ -5,12 +5,12 @@
       <div class="hero-slide current">
         <div class="container">
           <div class="hero-content">
-            <h1>Powerful Performance for Creators</h1>
-            <p>Unleash your creativity with the latest high-performance model, tailored for designers and professionals. With cutting-edge technology, seamless visuals, and powerful processing, bring your ideas to life like never before.</p>
-            <router-link to="/shop" class="btn-primary">SEE MORE DETAILS</router-link>
+            <h1>Fashion & Lifestyle Essentials</h1>
+            <p>Discover our carefully curated collection of fashion items, from bags and clothing to beauty and home goods. All products are strictly selected to ensure the perfect balance of quality and value.</p>
+            <router-link to="/shop" class="btn-primary">SHOP NOW</router-link>
           </div>
           <div class="hero-image">
-            <img src="https://ext.same-assets.com/2269417689/414049359.png" alt="MacBook Pro">
+            <img src="https://img.kwcdn.com/product/fancy/686f03bb-e697-437b-95ee-d352f26aa491.jpg?imageView2/2/w/800/q/70/format/webp" alt="Fashion Bag">
           </div>
         </div>
       </div>
@@ -37,22 +37,23 @@
         <h2 class="section-title">Promoted products</h2>
         <div class="promo-content">
           <div class="monthly-specials">
-            <h3>Monthly specials</h3>
+            <h3>Monthly Specials</h3>
             <div class="promo-products">
               <div class="promo-product" v-for="(product, index) in promoProducts" :key="index" >
                 <div v-if="index < 2">
                   <img :src="product.image" :alt="product.name" class="promo-product-img">
-                <h4>{{ product.name }}</h4>
-                <p class="promo-price">Rs.{{ formatPrice(product.price) }}</p>
+                  <h4>{{ product.name }}</h4>
+                  <p class="promo-price">Rs.{{ formatPrice(product.price) }}</p>
+                  <p class="promo-discount">20% OFF</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="black-friday">
-            <h3>Black Friday Sale</h3>
+            <h3>Summer Sale</h3>
             <h2>Up to <strong>50%</strong> OFF</h2>
-            <p>Sale starts on Now</p>
-            <router-link to="/shop" class="btn-primary">SEE ALL OFFERS</router-link>
+            <p>Limited Time Offer</p>
+            <router-link to="/shop" class="btn-primary">SHOP NOW</router-link>
           </div>
         </div>
       </div>
@@ -128,7 +129,11 @@ export default {
       return this.products.slice(0, 4)
     },
     promoProducts () {
-      return this.products.filter(product => product.category === 'iphone').slice(0, 2)
+      // 从不同类别中选择一些产品作为促销产品
+      return [
+        this.products.find(p => p.category === 'bags'),
+        this.products.find(p => p.category === 'clothing')
+      ].filter(Boolean)
     }
   },
   methods: {
@@ -301,6 +306,12 @@ export default {
 .promo-price {
   font-weight: bold;
   color: var(--primary-color);
+}
+
+.promo-discount {
+  font-weight: normal;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .black-friday {

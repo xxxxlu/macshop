@@ -25,7 +25,6 @@
 
           <div class="footer-widget">
             <h4>Contact info</h4>
-            <h4 class="contact-phone">+92 320 9972624</h4>
             <p class="contact-email">inspireinnosmc@gmail.com</p>
           </div>
 

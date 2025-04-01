@@ -16,25 +16,25 @@
         </div>
 
         <div class="about-text">
-          <h2>Everything you need for work</h2>
-          <p>At Elite Mac Store, we're passionate about providing you with the best Apple products to enhance your productivity, creativity, and daily life. Established in 2023, we've quickly become a trusted source for premium Apple devices and accessories.</p>
+          <h2>Your One-Stop Fashion Destination</h2>
+          <p>At our store, we're passionate about bringing you the latest trends in fashion, beauty, and lifestyle products. Established in 2023, we've quickly become a trusted source for quality fashion items and accessories.</p>
 
           <h3>Our Mission</h3>
-          <p>Our mission is to make high-quality technology accessible to everyone. We believe that the right tools can transform how you work, create, and connect with the world.</p>
+          <p>Our mission is to make fashion accessible to everyone. We believe that everyone deserves to look and feel their best without breaking the bank.</p>
 
           <h3>Why Choose Us?</h3>
           <ul class="about-features">
             <li>
-              <span class="feature-highlight">Premium Products</span>
-              We offer only genuine Apple products with full warranty support.
+              <span class="feature-highlight">Quality Products</span>
+              We offer carefully selected items with guaranteed quality.
             </li>
             <li>
-              <span class="feature-highlight">Expert Guidance</span>
-              Our knowledgeable team is ready to help you find the perfect device for your needs.
+              <span class="feature-highlight">Fashion Expertise</span>
+              Our knowledgeable team helps you find the perfect style for your needs.
             </li>
             <li>
               <span class="feature-highlight">Competitive Pricing</span>
-              We strive to offer the best prices without compromising on quality or service.
+              We strive to offer the best prices without compromising on quality.
             </li>
             <li>
               <span class="feature-highlight">Fast & Reliable Shipping</span>
@@ -42,14 +42,14 @@
             </li>
             <li>
               <span class="feature-highlight">Excellent Customer Service</span>
-              We're committed to providing exceptional support before, during, and after your purchase.
+              We're committed to providing exceptional support throughout your shopping journey.
             </li>
           </ul>
 
           <h3>Our Values</h3>
-          <p>We believe in transparency, integrity, and putting the customer first. Every decision we make is guided by our commitment to providing an outstanding shopping experience.</p>
+          <p>We believe in transparency, integrity, and putting our customers first. Every decision we make is guided by our commitment to providing an outstanding shopping experience.</p>
 
-          <p>Whether you're a professional looking for powerful tools, a student needing reliable technology, or simply an Apple enthusiast, Elite Mac Store is your destination for all things Apple.</p>
+          <p>Whether you're looking for trendy fashion items, beauty products, or home essentials, we're your destination for all your lifestyle needs.</p>
 
           <router-link to="/shop" class="btn-primary">Shop Now</router-link>
         </div>

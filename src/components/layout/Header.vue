@@ -16,11 +16,15 @@
             <li class="has-dropdown">
               <router-link to="/shop">SHOP</router-link>
               <ul class="dropdown">
-                <li><router-link to="/shop?category=iphone">iPhone</router-link></li>
-                <li><router-link to="/shop?category=ipad">iPad</router-link></li>
-                <li><router-link to="/shop?category=macbook">MacBook</router-link></li>
-                <li><router-link to="/shop?category=imac">iMac</router-link></li>
+                <li><router-link to="/shop?category=bags">Bags</router-link></li>
+                <li><router-link to="/shop?category=clothing">Clothing</router-link></li>
+                <li><router-link to="/shop?category=shoes">Shoes</router-link></li>
+                <li><router-link to="/shop?category=jewelry">Jewelry</router-link></li>
+                <li><router-link to="/shop?category=watches">Watches</router-link></li>
                 <li><router-link to="/shop?category=accessories">Accessories</router-link></li>
+                <li><router-link to="/shop?category=home">Home & Kitchen</router-link></li>
+                <li><router-link to="/shop?category=beauty">Beauty & Health</router-link></li>
+                <li><router-link to="/shop?category=toys">Toys & Games</router-link></li>
               </ul>
             </li>
             <li><router-link to="/about">ABOUT US</router-link></li>
@@ -71,11 +75,15 @@
         <li>
           <router-link to="/shop" @click="toggleMobileMenu">SHOP</router-link>
           <ul>
-            <li><router-link to="/shop?category=iphone" @click="toggleMobileMenu">iPhone</router-link></li>
-            <li><router-link to="/shop?category=ipad" @click="toggleMobileMenu">iPad</router-link></li>
-            <li><router-link to="/shop?category=macbook" @click="toggleMobileMenu">MacBook</router-link></li>
-            <li><router-link to="/shop?category=imac" @click="toggleMobileMenu">iMac</router-link></li>
+            <li><router-link to="/shop?category=bags" @click="toggleMobileMenu">Bags</router-link></li>
+            <li><router-link to="/shop?category=clothing" @click="toggleMobileMenu">Clothing</router-link></li>
+            <li><router-link to="/shop?category=shoes" @click="toggleMobileMenu">Shoes</router-link></li>
+            <li><router-link to="/shop?category=jewelry" @click="toggleMobileMenu">Jewelry</router-link></li>
+            <li><router-link to="/shop?category=watches" @click="toggleMobileMenu">Watches</router-link></li>
             <li><router-link to="/shop?category=accessories" @click="toggleMobileMenu">Accessories</router-link></li>
+            <li><router-link to="/shop?category=home" @click="toggleMobileMenu">Home & Kitchen</router-link></li>
+            <li><router-link to="/shop?category=beauty" @click="toggleMobileMenu">Beauty & Health</router-link></li>
+            <li><router-link to="/shop?category=toys" @click="toggleMobileMenu">Toys & Games</router-link></li>
           </ul>
         </li>
         <li><router-link to="/about" @click="toggleMobileMenu">ABOUT US</router-link></li>
