@@ -25,7 +25,7 @@
 
           <div class="footer-widget">
             <h4>Contact info</h4>
-            <p class="contact-email">inspireinnosmc@gmail.com</p>
+            <p class="contact-email">electropak@gmail.com</p>
           </div>
 
           <div class="footer-widget">
