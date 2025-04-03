@@ -16,14 +16,6 @@
           <p>We'd love to hear from you! Whether you have a question about our products, need assistance with an order, or want to provide feedback, our team is here to help.</p>
 
           <div class="contact-methods">
-            <div class="contact-method">
-              <i class="fas fa-phone-alt"></i>
-              <div class="method-details">
-                <h3>Call Us</h3>
-                <p>+92 320 9972624</p>
-                <p class="detail-note">Monday to Friday, 9am to 6pm</p>
-              </div>
-            </div>
 
             <div class="contact-method">
               <i class="fas fa-envelope"></i>
