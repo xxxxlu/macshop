@@ -27,7 +27,6 @@
             <h4>Contact info</h4>
             <p class="contact-email">electropak@gmail.com</p>
           </div>
-
           <div class="footer-widget">
             <h4>Payment Methods</h4>
             <div class="payment-methods">
